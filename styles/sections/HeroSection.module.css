@@ -1,0 +1,514 @@
+/* ─── Section ───────────────────────────────────────────── */
+.section {
+  position: sticky;
+  top: 0;
+  height: var(--slide-height);
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    var(--hero-start) 0%,
+    var(--hero-mid) 55%,
+    var(--hero-end) 100%
+  );
+  overflow: hidden;
+}
+
+/* ─── Photo ─────────────────────────────────────────────── */
+.photo {
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 3.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(280px, 42vw, 520px);
+  height: clamp(380px, 78vh, 680px);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoGlow {
+  position: absolute;
+  inset: -12%;
+  border-radius: 2.5rem;
+  background: radial-gradient(
+    ellipse at 60% 40%,
+    rgba(247, 147, 30, 0.45) 0%,
+    rgba(232, 85, 0, 0.15) 45%,
+    transparent 70%
+  );
+  filter: blur(28px);
+  z-index: 0;
+}
+
+.photoFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 24px 60px rgba(26, 8, 0, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+}
+
+.photoImg {
+  object-fit: cover;
+  object-position: center 20%;
+  transform: scale(1.02);
+}
+
+.photoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(248, 213, 176, 0.15) 0%,
+    transparent 35%,
+    rgba(26, 8, 0, 0.18) 100%
+  );
+  pointer-events: none;
+}
+
+.photoBadge {
+  position: absolute;
+  left: -0.5rem;
+  bottom: 2.5rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 24px rgba(26, 8, 0, 0.12);
+}
+
+.photoBadgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--status-available);
+  flex-shrink: 0;
+}
+
+/* ─── Social Sidebar ─────────────────────────────────────── */
+.socialSidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2.75rem;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  pointer-events: auto;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+}
+
+.socialLink:hover {
+  opacity: 1;
+}
+
+.socialLabel {
+  font-size: 0.48rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-primary);
+  opacity: 0.45;
+}
+
+.scrollText {
+  font-size: 0.44rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+}
+
+/* ─── Left Content Column ────────────────────────────────── */
+.content {
+  position: absolute;
+  left: 4rem;
+  top: clamp(5rem, 12vh, 8rem);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  cursor: default;
+  max-width: min(48vw, 560px);
+  --hero-name-size: clamp(3.5rem, 7.5vw, 8rem);
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.greetText {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+.roleText {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+/* ─── Name Block ─────────────────────────────────────────── */
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.88;
+}
+
+.name {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: var(--hero-name-size);
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+/* ─── Tag Pills ──────────────────────────────────────────── */
+.pills {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.pill {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 9999px;
+  padding: 0.65rem 1.5rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex: 1;
+  text-align: center;
+}
+
+.pillDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ─── View Projects Button ───────────────────────────────── */
+.viewBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--accent);
+  color: #ffffff;
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.65rem 1.6rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  align-self: flex-start;
+  letter-spacing: 0.01em;
+}
+
+.viewBtn:hover {
+  background: var(--accent-hover);
+}
+
+.viewBtn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ─── Stats Row ──────────────────────────────────────────── */
+.stats {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 0.75rem;
+  padding: 0.55rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  min-width: 6rem;
+}
+
+.statValue {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.025em;
+  line-height: 1.3;
+}
+
+/* ─── Cards Column ───────────────────────────────────────── */
+.cardsCol {
+  position: absolute;
+  left: 4rem;
+  bottom: clamp(1.75rem, 4vh, 3rem);
+  width: min(52vw, 540px);
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.taglineCard,
+.availCard {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  border-radius: 1.1rem;
+  padding: 1rem 1.15rem;
+  box-shadow: 0 10px 30px rgba(26, 8, 0, 0.1);
+}
+
+.taglineText {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.45;
+  margin-bottom: 0.45rem;
+}
+
+.taglineAccent {
+  color: var(--accent);
+}
+
+.freelanceNote {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.availHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.availDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--status-available);
+  flex-shrink: 0;
+}
+
+.availStatus {
+  font-family: var(--font-baloo), sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.locationLine {
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+}
+
+/* ─── Responsive: Mobile < 768px ────────────────────────── */
+@media (max-width: 767px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    height: var(--slide-height);
+    min-height: unset;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .content {
+    position: relative;
+    left: auto;
+    top: auto;
+    order: 1;
+    width: 100%;
+    max-width: none;
+    padding: calc(3.75rem + var(--safe-top)) 1rem 0.2rem;
+    box-sizing: border-box;
+    gap: 0.45rem;
+    flex-shrink: 0;
+    --hero-name-size: clamp(1.75rem, 8vw, 2.75rem);
+  }
+
+  .name { white-space: normal; }
+
+  .greeting { gap: 0; }
+  .greetText, .roleText { font-size: 0.78rem; }
+
+  .photo {
+    position: relative;
+    order: 2;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    width: calc(100% - 2rem);
+    height: clamp(120px, 20svh, 165px);
+    margin: 0.2rem auto 0;
+    flex-shrink: 0;
+  }
+
+  .photoBadge {
+    left: 0.75rem;
+    bottom: 0.65rem;
+    font-size: 0.58rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  .photoGlow { inset: -8%; filter: blur(18px); }
+  .photoFrame { border-radius: 1.25rem; }
+
+  .cardsCol {
+    display: grid;
+    position: relative;
+    order: 3;
+    left: auto;
+    bottom: auto;
+    width: calc(100% - 2rem);
+    margin: 0.35rem auto 0;
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    flex-shrink: 0;
+  }
+
+  .taglineCard,
+  .availCard {
+    padding: 0.65rem 0.85rem;
+  }
+
+  .taglineText { font-size: 0.74rem; margin-bottom: 0.3rem; }
+  .freelanceNote { font-size: 0.62rem; }
+  .availStatus { font-size: 0.72rem; }
+  .locationLine { font-size: 0.6rem; line-height: 1.5; }
+
+  .socialSidebar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    order: 4;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    padding: 0.35rem 1rem calc(0.5rem + var(--safe-bottom));
+    justify-content: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .socialSidebar .socialLabel {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 0.48rem;
+  }
+
+  .scrollIndicator { display: none; }
+
+  .stats       { display: none; }
+  .pills       { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; margin-top: 0.25rem; }
+  .pill        { font-size: 0.58rem; padding: 0.28rem 0.45rem; text-align: center; white-space: normal; flex: unset; }
+  .pillDot     { display: none; }
+  .viewBtn     { font-size: 0.72rem; padding: 0.45rem 1rem; }
+}
+
+@media (max-width: 374px) {
+  .photo   { width: calc(100% - 1.5rem); height: clamp(110px, 18svh, 140px); }
+  .content { padding-left: 0.85rem; padding-right: 0.85rem; }
+  .cardsCol { width: calc(100% - 1.5rem); }
+  .taglineText { font-size: 0.68rem; }
+}
+
+/* ─── Responsive: Tablet 768–1023px ─────────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content     { left: 3rem; top: 18vh; max-width: 44vw; --hero-name-size: clamp(3rem, 7vw, 6rem); }
+  .photo       { width: clamp(240px, 38vw, 400px); height: 70vh; }
+  .cardsCol    { left: 3rem; bottom: 1.5rem; width: min(58vw, 480px); grid-template-columns: 1fr 1fr; }
+  .socialSidebar { width: 2.25rem; }
+  .name        { white-space: normal; }
+}

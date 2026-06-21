@@ -1,0 +1,313 @@
+.section {
+  position: sticky;
+  top: 0;
+  height: var(--slide-height);
+  z-index: 3;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow: hidden;
+}
+
+/* ── Left column ───────────────────────────── */
+
+.photoCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8rem 1.5rem 2.5rem 2.5rem;
+  overflow: visible;
+}
+
+/* Wrapper holds frame + overlapping signature */
+.photoWrap {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  max-height: 72vh;
+}
+
+/* Photo frame */
+.photoFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.photoImg {
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Signature - overlaps bottom-right corner of photo */
+.signature {
+  position: absolute;
+  bottom: 0rem;
+  right: -5rem;
+  font-family: var(--font-dancing), cursive;
+  color: var(--accent);
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  transform: rotate(-10deg);
+  transform-origin: right bottom;
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-3px) scale(1.12);
+}
+
+/* ── Right column ──────────────────────────── */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 4rem 4rem 3rem;
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Who I Am label */
+.whoLabel {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.6rem 0;
+  flex-shrink: 0;
+}
+
+/* Who I Am - infinite marquee */
+.marqueeWrap {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  flex-shrink: 0;
+  mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 18s linear infinite;
+}
+
+.marqueeItem {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marqueeDot {
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0 0.4rem;
+}
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.bioWrap {
+  overflow: hidden;
+}
+
+.bio {
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1.42;
+  color: #111;
+  margin: 0;
+  width: 100%;
+}
+
+.typed    { color: #111; }
+.untyped  { color: #c8c8c8; }
+
+/* Cursor lives as ::after on the last typed char - never a sibling node,
+   so it cannot shift adjacent text or change line-wrap decisions. */
+.lastTyped {
+  color: #111;
+}
+.lastTyped::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background: var(--accent);
+  margin-left: 2px;
+  margin-right: -4px;   /* absorb its own width */
+  vertical-align: text-bottom;
+  animation: blink 0.75s step-end infinite;
+}
+
+.cursor {
+  display: none; /* kept to avoid breaking any lingering references */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@media (max-width: 767px) {
+  .section {
+    position: sticky;
+    top: 0;
+    height: var(--slide-height);
+    min-height: unset;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    overflow: hidden;
+  }
+
+  .photoCol {
+    padding: calc(3.25rem + var(--safe-top)) 1rem 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.65rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .photoWrap {
+    flex: 1;
+    min-width: 0;
+    height: clamp(110px, 24svh, 160px);
+    max-height: 24svh;
+    min-height: 110px;
+  }
+
+  .photoFrame {
+    height: 100%;
+  }
+
+  .signature {
+    font-size: clamp(1.4rem, 7vw, 2rem);
+    bottom: -0.25rem;
+    right: 0.25rem;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .socials {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 0.35rem;
+    flex-shrink: 0;
+  }
+
+  .socialLink {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 0.9rem;
+  }
+
+  .content {
+    justify-content: flex-start;
+    padding: 0.5rem 1rem calc(0.75rem + var(--safe-bottom));
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .whoLabel {
+    font-size: 0.72rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .marqueeWrap {
+    margin-bottom: 0.45rem;
+  }
+
+  .marqueeItem {
+    font-size: 0.58rem;
+  }
+
+  .bioWrap {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding-right: 0.15rem;
+    touch-action: pan-y;
+  }
+
+  .bio {
+    font-size: clamp(0.72rem, 3.4vw, 0.88rem);
+    line-height: 1.55;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 374px) {
+  .photoCol {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .photoWrap {
+    height: clamp(100px, 22svh, 140px);
+    max-height: 22svh;
+    min-height: 100px;
+  }
+
+  .content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .bio {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section    { grid-template-columns: 35% 65%; }
+  .photoCol   { padding: 5rem 1rem 2rem 1.5rem; }
+  .content    { padding: 3rem 2rem 2rem; }
+  .bio        { font-size: clamp(0.85rem, 1.4vw, 1.2rem); }
+  .signature  { font-size: 4rem; }
+}

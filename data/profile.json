@@ -1,0 +1,169 @@
+{
+  "name": {
+    "first": "Hariprasath",
+    "last": "R",
+    "full": "R. Hariprasath"
+  },
+  "email": "hariprasathr003@gmail.com",
+  "phone": "+91-9095407776",
+  "tagline": "Building scalable full stack web applications with React, Node.js, and modern cloud integrations.",
+  "description": "Full Stack Developer specializing in React.js, Node.js, Express.js, Next.js, and MySQL — delivering responsive interfaces, REST APIs, and production-ready team collaboration platforms.",
+  "roles": {
+    "short": "Full Stack Developer",
+    "detailed": "Associate Software Developer | Full Stack Developer"
+  },
+  "location": {
+    "based": "Bodinayakanur, Tamil Nadu",
+    "availability": "Tamil Nadu / Remote"
+  },
+  "available": true,
+  "assets": {
+    "hero": "/assets/hariprasath-hero.png",
+    "about": "/assets/hariprasath-about.png",
+    "footer": "/assets/hariprasath-footer.png",
+    "mobileFooter": "/assets/mobile-footer.png",
+    "workExperience": "/assets/work-experience.png",
+    "introVideo": "/assets/about_me.mp4",
+    "footerVideo": "/assets/footer-video.mp4"
+  },
+  "bio": "Full Stack Developer with experience designing and building scalable web applications using React.js, Node.js, Express.js, Next.js, Prisma, and MySQL. Skilled in REST API development, JWT authentication, role-based access control, AWS S3 integration, and third-party platform synchronization. Currently developing TaskWagon at Ennem Marketing Pvt. Ltd., a team collaboration and task management platform with employee portal, attendance, and HR modules.",
+  "stats": [
+    { "value": "2+", "label": "Years Experience" },
+    { "value": "2", "label": "Major Projects" },
+    { "value": "4", "label": "Certifications" }
+  ],
+  "skills": [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "JavaScript",
+    "TypeScript",
+    "Prisma",
+    "MySQL",
+    "Redux",
+    "REST APIs",
+    "JWT Authentication",
+    "AWS S3",
+    "Git/GitHub",
+    "Agile"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Associate Software Developer / Full Stack Developer",
+      "company": "Ennem Marketing Pvt. Ltd.",
+      "companyShort": "ENNEM",
+      "type": "Full-time",
+      "location": "Bodinayakanur, Tamil Nadu",
+      "period": "Feb 2026",
+      "periodEnd": "Present",
+      "bullets": [
+        "Developing and maintaining TaskWagon, a team collaboration and task management platform.",
+        "Implementing task assignment, tracking, and workflow management features.",
+        "Building responsive user interfaces using React.js and modern web technologies.",
+        "Integrating ClickUp for synchronization of spaces, folders, lists, tasks, subtasks, and attachments.",
+        "Managing employee portal, attendance management, HR modules, and role-based access control.",
+        "Implementing AWS S3 integration for secure file and image storage."
+      ],
+      "desc": "Full stack development of TaskWagon — team collaboration, HR modules, ClickUp sync, and AWS S3 file storage.",
+      "tech": ["React.js", "Node.js", "Express.js", "Next.js", "Prisma", "MySQL", "AWS S3", "Redux", "REST APIs"]
+    },
+    {
+      "id": 2,
+      "role": "Full Stack Developer",
+      "company": "Kaaylabs",
+      "companyShort": "KAAYLABS",
+      "type": "Full-time",
+      "location": "Chennai",
+      "period": "Jan 2025",
+      "periodEnd": "Jan 2026",
+      "bullets": [
+        "Developed and maintained scalable web applications using React, Node.js, and Express.js.",
+        "Optimized RESTful APIs and implemented JWT-based authentication with role-based authorization.",
+        "Designed and optimized database schemas using MySQL and MongoDB.",
+        "Built reusable UI components and integrated third-party APIs with robust error handling.",
+        "Participated in Agile ceremonies including sprint planning and code reviews."
+      ],
+      "desc": "Full stack development for Hub-Talent-Acquisition, an internal recruitment management platform with MVC architecture.",
+      "tech": ["React.js", "Node.js", "Express.js", "TypeScript", "MySQL", "JWT", "Git"]
+    },
+    {
+      "id": 3,
+      "role": "Junior Frontend Developer",
+      "company": "MakinfraTek Software Solutions",
+      "companyShort": "MAKINFRATEK",
+      "type": "Internship",
+      "location": "Coimbatore",
+      "period": "Aug 2024",
+      "periodEnd": "Jan 2025",
+      "bullets": [
+        "Gained hands-on exposure to frontend development processes and production workflows.",
+        "Contributed to responsive web interfaces and collaborated with the development team.",
+        "Demonstrated punctuality, dedication, and a strong willingness to learn new technologies."
+      ],
+      "desc": "Frontend development internship focused on building modern, responsive web application interfaces.",
+      "tech": ["React.js", "JavaScript", "HTML5", "CSS3", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "TaskWagon",
+      "subtitle": "Team Collaboration & Task Management",
+      "type": "Full Stack",
+      "link": "https://taskwagon.com/",
+      "image": "/assets/project-taskwagon.png",
+      "tech": ["React.js", "Next.js", "Node.js", "Express.js", "Prisma", "MySQL", "AWS S3", "Redux", "ClickUp API"],
+      "desc": "A team collaboration and task management platform with task assignment, workflow tracking, employee portal, attendance management, HR modules, role-based access control, and ClickUp synchronization for spaces, folders, lists, tasks, and attachments."
+    },
+    {
+      "id": 2,
+      "title": "Hub-Talent-Acquisition",
+      "subtitle": "Recruitment Management Platform",
+      "type": "Full Stack",
+      "link": "https://hub-talent-acquisition.apps.kaaylabs.com/",
+      "image": "/assets/project-hub-talent.png",
+      "tech": ["React.js", "Node.js", "Express.js", "TypeScript", "MySQL", "JWT", "MVC"],
+      "desc": "An internal recruitment management platform featuring job posting, approval workflows, candidate tracking, and role-based access control for Admin and HR roles, built with MVC architecture and automated email notifications."
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "B.E. Computer Science and Engineering",
+      "platform": "Sasurie College of Engineering",
+      "year": "2023",
+      "link": "mailto:hariprasathr003@gmail.com",
+      "desc": "Bachelor of Engineering in Computer Science and Engineering from Sasurie College of Engineering, Anna University, Tirupur. CGPA: 7.79 (2019–2023)."
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Development Course",
+      "platform": "Inetztech, Chennai",
+      "year": "2025",
+      "link": "mailto:hariprasathr003@gmail.com",
+      "desc": "Comprehensive full stack development training covering React.js, Node.js, Express.js, and database-driven application development (Aug 2024 – Jan 2025)."
+    },
+    {
+      "id": 3,
+      "title": "Full Stack with Java Training",
+      "platform": "Besant Technologies",
+      "year": "2024",
+      "link": "mailto:hariprasathr003@gmail.com",
+      "desc": "Certificate of completion for Full Stack with Java training program. Credential ID: BDZOMR86903, issued January 2024."
+    },
+    {
+      "id": 4,
+      "title": "Web Development Internship",
+      "platform": "Immensphere × Teachnook",
+      "year": "2022",
+      "link": "mailto:hariprasathr003@gmail.com",
+      "desc": "Internship completion in Web Development (Sep – Oct 2022). Certificate ID: TNINTC22-772, issued August 2023."
+    }
+  ],
+  "socials": [
+    { "label": "GitHub",   "href": "https://github.com/Hariprasathr003" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/hari-prasath-r-a28801246" }
+  ]
+}
