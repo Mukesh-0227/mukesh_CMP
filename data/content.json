@@ -3,24 +3,24 @@
     "tagline": "Portfolio 2026"
   },
   "hero": {
-    "taglineHighlight": "full stack",
-    "freelanceNote": "Open to full stack development, React, Node.js, and cloud-integrated web application opportunities.",
+    "taglineHighlight": "RAG chatbots",
+    "freelanceNote": "Open to AI engineering, automation engineering, and backend development roles with Python, LangChain, and workflow orchestration.",
     "availableLabel": "Available for opportunities",
-    "pills": ["React.js", "Node.js", "Next.js", "AWS S3"],
-    "specialistStat": { "value": "Full Stack", "label": "Specialist" }
+    "pills": ["Python", "LangChain", "n8n", "OpenAI API"],
+    "specialistStat": { "value": "AI & Auto", "label": "Specialist" }
   },
   "interstitial": {
     "availabilityLabel": "Availability",
     "basedInLabel": "Based in",
-    "statLabels": ["Years\nexperience", "Major\nprojects", "Professional\ncertifications"]
+    "statLabels": ["Years\nexperience", "Clients\nserved", "Major\nprojects"]
   },
   "footer": {
-    "eyebrow": "Available for full stack development roles",
-    "ctaLines": ["Building reliable", "web applications"],
+    "eyebrow": "Available for AI & automation engineering roles",
+    "ctaLines": ["Building intelligent", "automation systems"],
     "ctaAccent": "together."
   },
   "publications": {
-    "label": "Education & Certifications",
+    "label": "Education & Skills",
     "heading": "Qualifications"
   }
 }

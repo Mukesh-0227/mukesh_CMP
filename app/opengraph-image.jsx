@@ -4,7 +4,7 @@ import profile from '@/data/profile.json'
 
 export const runtime = 'edge'
 
-export const alt = 'R. Hariprasath | Full Stack Developer'
+export const alt = 'Mukeshkumar B | AI & Automation Engineer'
 
 export const size = {
   width: 1200,
@@ -78,7 +78,7 @@ export default function Image() {
                 textTransform: 'uppercase',
               }}
             >
-              FULL STACK DEVELOPER
+              AI & AUTOMATION ENGINEER
             </span>
           </div>
 
@@ -92,12 +92,12 @@ export default function Image() {
           >
             <span
               style={{
-                fontSize: 92,
+                fontSize: 72,
                 fontWeight: 900,
                 letterSpacing: -4,
               }}
             >
-              HARIPRASATH
+              MUKESHKUMAR
             </span>
 
             <span
@@ -108,7 +108,7 @@ export default function Image() {
                 letterSpacing: -4,
               }}
             >
-              R
+              B
             </span>
           </div>
 
@@ -121,8 +121,8 @@ export default function Image() {
               marginBottom: 34,
             }}
           >
-            Building scalable web applications with React, Node.js, Next.js,
-            and cloud-integrated backends.
+            Building production RAG chatbots, workflow automation, and
+            WhatsApp lead-nurturing systems with Python and LangChain.
           </div>
 
           <div
@@ -134,10 +134,10 @@ export default function Image() {
             }}
           >
             {[
-              'React.js',
-              'Node.js',
-              'Next.js',
-              'AWS S3',
+              'Python',
+              'LangChain',
+              'n8n',
+              'OpenAI API',
             ].map((tag) => (
               <div
                 key={tag}
@@ -163,9 +163,9 @@ export default function Image() {
             }}
           >
             {[
-              ['3+', 'Years'],
-              ['2', 'Projects'],
-              ['Full Stack', 'Specialist'],
+              ['1+', 'Years'],
+              ['10+', 'Clients'],
+              ['AI & Auto', 'Specialist'],
             ].map(([value, label]) => (
               <div
                 key={label}
@@ -214,7 +214,7 @@ export default function Image() {
             src={photoUrl}
             width={420}
             height={630}
-            alt="R. Hariprasath"
+            alt="Mukeshkumar B"
             style={{
               objectFit: 'cover',
             }}

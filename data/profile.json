@@ -1,16 +1,16 @@
 {
   "name": {
-    "first": "Hariprasath",
-    "last": "R",
-    "full": "R. Hariprasath"
+    "first": "Mukeshkumar",
+    "last": "B",
+    "full": "Mukeshkumar B"
   },
-  "email": "hariprasathr003@gmail.com",
-  "phone": "+91-9095407776",
-  "tagline": "Building scalable full stack web applications with React, Node.js, and modern cloud integrations.",
-  "description": "Full Stack Developer specializing in React.js, Node.js, Express.js, Next.js, and MySQL — delivering responsive interfaces, REST APIs, and production-ready team collaboration platforms.",
+  "email": "bmukeshkumar027@gmail.com",
+  "phone": "+91 7010611975",
+  "tagline": "Building production RAG chatbots, multi-client workflow automation, and WhatsApp lead-nurturing systems with Python, LangChain, and no-code orchestration.",
+  "description": "AI & Automation Engineer with 1+ year of hands-on experience delivering production RAG chatbots, multi-client workflow automation, and WhatsApp lead-nurturing systems across Python, REST APIs, LLMs, and tools like n8n, Make, and Zapier.",
   "roles": {
-    "short": "Full Stack Developer",
-    "detailed": "Associate Software Developer | Full Stack Developer"
+    "short": "AI Engineer",
+    "detailed": "AI Engineer | Automation Engineer | Backend Developer"
   },
   "location": {
     "based": "Bodinayakanur, Tamil Nadu",
@@ -18,152 +18,117 @@
   },
   "available": true,
   "assets": {
-    "hero": "/assets/hariprasath-hero.png",
-    "about": "/assets/hariprasath-about.png",
-    "footer": "/assets/hariprasath-footer.png",
-    "mobileFooter": "/assets/mobile-footer.png",
-    "workExperience": "/assets/work-experience.png",
-    "introVideo": "/assets/about_me.mp4",
-    "footerVideo": "/assets/footer-video.mp4"
+    "hero": "/assets/mukeshkumar-hero.png",
+    "about": "/assets/mukeshkumar-about.png",
+    "footer": "/assets/mukeshkumar-footer.png",
+    "mobileFooter": "/assets/mukeshkumar-mobile-footer.png",
+    "workExperience": "/assets/mukeshkumar-work-experience.png",
+    "introVideo": "/assets/mukeshkumar-intro.mp4",
+    "footerVideo": "/assets/mukeshkumar-footer.mp4"
   },
-  "bio": "Full Stack Developer with experience designing and building scalable web applications using React.js, Node.js, Express.js, Next.js, Prisma, and MySQL. Skilled in REST API development, JWT authentication, role-based access control, AWS S3 integration, and third-party platform synchronization. Currently developing TaskWagon at Ennem Marketing Pvt. Ltd., a team collaboration and task management platform with employee portal, attendance, and HR modules.",
+  "bio": "AI & Automation Engineer with 1+ year of hands-on experience delivering production RAG chatbots, multi-client workflow automation, and WhatsApp lead-nurturing systems. Comfortable across the full stack — Python back-end, REST API design, LLM integration with OpenAI and LangChain, and no-code orchestration with n8n, Make, and Zapier. Built and deployed solutions for 10+ clients, cutting manual effort and improving conversion rates measurably.",
   "stats": [
-    { "value": "2+", "label": "Years Experience" },
-    { "value": "2", "label": "Major Projects" },
-    { "value": "4", "label": "Certifications" }
+    { "value": "1+", "label": "Years Experience" },
+    { "value": "10+", "label": "Clients Served" },
+    { "value": "3", "label": "Major Projects" }
   ],
   "skills": [
-    "React.js",
-    "Next.js",
-    "Node.js",
-    "Express.js",
+    "Python",
     "JavaScript",
-    "TypeScript",
-    "Prisma",
-    "MySQL",
-    "Redux",
+    "SQL",
+    "LangChain",
+    "RAG Pipelines",
+    "OpenAI API",
+    "FAISS",
+    "FastAPI",
+    "n8n",
+    "Make",
+    "Zapier",
+    "WhatsApp Business API",
     "REST APIs",
-    "JWT Authentication",
-    "AWS S3",
-    "Git/GitHub",
-    "Agile"
+    "Git/GitHub"
   ],
   "experience": [
     {
       "id": 1,
-      "role": "Associate Software Developer / Full Stack Developer",
-      "company": "Ennem Marketing Pvt. Ltd.",
+      "role": "AI & Automation Engineer",
+      "company": "Ennem Marketings",
       "companyShort": "ENNEM",
       "type": "Full-time",
       "location": "Bodinayakanur, Tamil Nadu",
-      "period": "Feb 2026",
+      "period": "Jan 2025",
       "periodEnd": "Present",
       "bullets": [
-        "Developing and maintaining TaskWagon, a team collaboration and task management platform.",
-        "Implementing task assignment, tracking, and workflow management features.",
-        "Building responsive user interfaces using React.js and modern web technologies.",
-        "Integrating ClickUp for synchronization of spaces, folders, lists, tasks, subtasks, and attachments.",
-        "Managing employee portal, attendance management, HR modules, and role-based access control.",
-        "Implementing AWS S3 integration for secure file and image storage."
+        "Built and deployed RAG-based website support chatbots using Python, LangChain, and FAISS for 5+ clients; reduced customer query resolution time by ~40%.",
+        "Engineered WhatsApp automation bots via WhatsApp Business API and n8n for 3 clients, increasing response rate by 60%.",
+        "Designed reusable end-to-end automation pipelines connecting CRMs, email platforms, and social media APIs, eliminating 15+ hours/week of manual data entry per client.",
+        "Managed and optimized paid ad campaigns on Meta Ads and Google Ads for 10+ client accounts with analytics-driven iteration.",
+        "Conducted client discovery sessions to translate business requirements into technical specs and deliver customised automation solutions."
       ],
-      "desc": "Full stack development of TaskWagon — team collaboration, HR modules, ClickUp sync, and AWS S3 file storage.",
-      "tech": ["React.js", "Node.js", "Express.js", "Next.js", "Prisma", "MySQL", "AWS S3", "Redux", "REST APIs"]
-    },
-    {
-      "id": 2,
-      "role": "Full Stack Developer",
-      "company": "Kaaylabs",
-      "companyShort": "KAAYLABS",
-      "type": "Full-time",
-      "location": "Chennai",
-      "period": "Jan 2025",
-      "periodEnd": "Jan 2026",
-      "bullets": [
-        "Developed and maintained scalable web applications using React, Node.js, and Express.js.",
-        "Optimized RESTful APIs and implemented JWT-based authentication with role-based authorization.",
-        "Designed and optimized database schemas using MySQL and MongoDB.",
-        "Built reusable UI components and integrated third-party APIs with robust error handling.",
-        "Participated in Agile ceremonies including sprint planning and code reviews."
-      ],
-      "desc": "Full stack development for Hub-Talent-Acquisition, an internal recruitment management platform with MVC architecture.",
-      "tech": ["React.js", "Node.js", "Express.js", "TypeScript", "MySQL", "JWT", "Git"]
-    },
-    {
-      "id": 3,
-      "role": "Junior Frontend Developer",
-      "company": "MakinfraTek Software Solutions",
-      "companyShort": "MAKINFRATEK",
-      "type": "Internship",
-      "location": "Coimbatore",
-      "period": "Aug 2024",
-      "periodEnd": "Jan 2025",
-      "bullets": [
-        "Gained hands-on exposure to frontend development processes and production workflows.",
-        "Contributed to responsive web interfaces and collaborated with the development team.",
-        "Demonstrated punctuality, dedication, and a strong willingness to learn new technologies."
-      ],
-      "desc": "Frontend development internship focused on building modern, responsive web application interfaces.",
-      "tech": ["React.js", "JavaScript", "HTML5", "CSS3", "Git"]
+      "desc": "Production AI chatbots, WhatsApp automation, and multi-platform workflow pipelines for marketing and lead-generation clients.",
+      "tech": ["Python", "LangChain", "FAISS", "OpenAI API", "n8n", "Make", "Zapier", "WhatsApp Business API", "FastAPI", "REST APIs"]
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "TaskWagon",
-      "subtitle": "Team Collaboration & Task Management",
-      "type": "Full Stack",
-      "link": "https://taskwagon.com/",
-      "image": "/assets/project-taskwagon.png",
-      "tech": ["React.js", "Next.js", "Node.js", "Express.js", "Prisma", "MySQL", "AWS S3", "Redux", "ClickUp API"],
-      "desc": "A team collaboration and task management platform with task assignment, workflow tracking, employee portal, attendance management, HR modules, role-based access control, and ClickUp synchronization for spaces, folders, lists, tasks, and attachments."
+      "title": "RAG-Powered Website Support Chatbot",
+      "subtitle": "Intelligent Document Retrieval",
+      "type": "AI / Backend",
+      "link": "mailto:bmukeshkumar027@gmail.com",
+      "image": "/assets/project-rag-chatbot.png",
+      "tech": ["Python", "LangChain", "OpenAI API", "FAISS", "FastAPI"],
+      "desc": "Ingests client website content and PDFs, chunks and embeds using OpenAI embeddings stored in FAISS, and serves context-aware answers via a FastAPI REST endpoint — reducing hallucination rate by ~70% versus a vanilla LLM baseline."
     },
     {
       "id": 2,
-      "title": "Hub-Talent-Acquisition",
-      "subtitle": "Recruitment Management Platform",
-      "type": "Full Stack",
-      "link": "https://hub-talent-acquisition.apps.kaaylabs.com/",
-      "image": "/assets/project-hub-talent.png",
-      "tech": ["React.js", "Node.js", "Express.js", "TypeScript", "MySQL", "JWT", "MVC"],
-      "desc": "An internal recruitment management platform featuring job posting, approval workflows, candidate tracking, and role-based access control for Admin and HR roles, built with MVC architecture and automated email notifications."
+      "title": "Multi-Client Automation Workflow Engine",
+      "subtitle": "Reusable n8n Framework",
+      "type": "Automation",
+      "link": "mailto:bmukeshkumar027@gmail.com",
+      "image": "/assets/project-automation-engine.png",
+      "tech": ["n8n", "Python", "REST APIs", "Webhooks", "Make", "Zapier"],
+      "desc": "A parameterised, reusable n8n automation framework integrating CRMs, email providers, and social media APIs — processing 500+ automated events daily and cutting new-client onboarding time by 50%."
+    },
+    {
+      "id": 3,
+      "title": "WhatsApp Lead Nurturing Bot",
+      "subtitle": "CRM-Integrated Drip Sequences",
+      "type": "Automation",
+      "link": "mailto:bmukeshkumar027@gmail.com",
+      "image": "/assets/project-whatsapp-bot.png",
+      "tech": ["Python", "WhatsApp Business API", "n8n", "Make", "Webhooks"],
+      "desc": "Automated 3-stage drip message sequences triggered by user actions via webhooks, integrated with CRM data for lead segmentation and personalised outreach — saving 8 hours/week of manual sales outreach per client."
     }
   ],
   "publications": [
     {
       "id": 1,
-      "title": "B.E. Computer Science and Engineering",
-      "platform": "Sasurie College of Engineering",
-      "year": "2023",
-      "link": "mailto:hariprasathr003@gmail.com",
-      "desc": "Bachelor of Engineering in Computer Science and Engineering from Sasurie College of Engineering, Anna University, Tirupur. CGPA: 7.79 (2019–2023)."
+      "title": "B.E. Mechanical Engineering",
+      "platform": "Nehru Institute of Engineering and Technology",
+      "year": "2024",
+      "link": "mailto:bmukeshkumar027@gmail.com",
+      "desc": "Bachelor of Engineering in Mechanical Engineering from Nehru Institute of Engineering and Technology, Coimbatore — Anna University (2021–2024)."
     },
     {
       "id": 2,
-      "title": "Full Stack Development Course",
-      "platform": "Inetztech, Chennai",
-      "year": "2025",
-      "link": "mailto:hariprasathr003@gmail.com",
-      "desc": "Comprehensive full stack development training covering React.js, Node.js, Express.js, and database-driven application development (Aug 2024 – Jan 2025)."
+      "title": "Self-Directed AI & Automation Upskilling",
+      "platform": "Independent Learning",
+      "year": "2024",
+      "link": "mailto:bmukeshkumar027@gmail.com",
+      "desc": "Python programming, machine learning fundamentals, LLM application development, REST API integration, and production automation with n8n, Make, and Zapier."
     },
     {
       "id": 3,
-      "title": "Full Stack with Java Training",
-      "platform": "Besant Technologies",
-      "year": "2024",
-      "link": "mailto:hariprasathr003@gmail.com",
-      "desc": "Certificate of completion for Full Stack with Java training program. Credential ID: BDZOMR86903, issued January 2024."
-    },
-    {
-      "id": 4,
-      "title": "Web Development Internship",
-      "platform": "Immensphere × Teachnook",
-      "year": "2022",
-      "link": "mailto:hariprasathr003@gmail.com",
-      "desc": "Internship completion in Web Development (Sep – Oct 2022). Certificate ID: TNINTC22-772, issued August 2023."
+      "title": "Languages",
+      "platform": "Professional Proficiency",
+      "year": "—",
+      "link": "mailto:bmukeshkumar027@gmail.com",
+      "desc": "English (Professional) · Tamil (Native) · Kannada (Conversational)."
     }
   ],
   "socials": [
-    { "label": "GitHub",   "href": "https://github.com/Hariprasathr003" },
-    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/hari-prasath-r-a28801246" }
+    { "label": "GitHub",   "href": "https://github.com/Mukesh-0227" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/mukeshkumarb-25387625b" }
   ]
 }

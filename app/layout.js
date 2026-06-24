@@ -26,7 +26,7 @@ const dancing = Dancing_Script({
 });
 
 const description =
-  'Full Stack Developer building scalable web applications with React.js, Node.js, Next.js, Prisma, MySQL, and AWS S3. Currently developing TaskWagon at Ennem Marketing Pvt. Ltd.';
+  'AI & Automation Engineer building production RAG chatbots, multi-client workflow automation, and WhatsApp lead-nurturing systems with Python, LangChain, n8n, and OpenAI.';
 
 export const viewport = {
   width: 'device-width',
@@ -37,46 +37,46 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'R. Hariprasath | Full Stack Developer',
-    template: '%s | R. Hariprasath',
+    default: 'Mukeshkumar B | AI & Automation Engineer',
+    template: '%s | Mukeshkumar B',
   },
   description,
   keywords: [
-    'R. Hariprasath',
-    'Hariprasath R',
-    'Full Stack Developer',
-    'React.js',
-    'Node.js',
-    'Next.js',
-    'Express.js',
-    'Prisma',
-    'MySQL',
-    'AWS S3',
-    'TaskWagon',
+    'Mukeshkumar B',
+    'Mukesh Kumar B',
+    'AI Engineer',
+    'Automation Engineer',
+    'Backend Developer',
+    'Python',
+    'LangChain',
+    'RAG',
+    'n8n',
+    'OpenAI',
+    'WhatsApp Automation',
     'Bodinayakanur',
     'Tamil Nadu',
   ],
-  authors: [{ name: 'R. Hariprasath', url: SITE_URL }],
-  creator: 'R. Hariprasath',
+  authors: [{ name: 'Mukeshkumar B', url: SITE_URL }],
+  creator: 'Mukeshkumar B',
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: SITE_URL,
-    siteName: 'R. Hariprasath',
-    title: 'R. Hariprasath | Full Stack Developer',
+    siteName: 'Mukeshkumar B',
+    title: 'Mukeshkumar B | AI & Automation Engineer',
     description,
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'R. Hariprasath | Full Stack Developer Portfolio',
+        alt: 'Mukeshkumar B | AI & Automation Engineer Portfolio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'R. Hariprasath | Full Stack Developer',
+    title: 'Mukeshkumar B | AI & Automation Engineer',
     description,
     images: ['/opengraph-image'],
   },
@@ -109,13 +109,13 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Person',
-              name: 'R. Hariprasath',
+              name: 'Mukeshkumar B',
               url: SITE_URL,
-              email: 'hariprasathr003@gmail.com',
-              jobTitle: 'Full Stack Developer',
+              email: 'bmukeshkumar027@gmail.com',
+              jobTitle: 'AI & Automation Engineer',
               sameAs: [
-                'https://github.com/Hariprasathr003',
-                'https://www.linkedin.com/in/hari-prasath-r-a28801246',
+                'https://github.com/Mukesh-0227',
+                'https://www.linkedin.com/in/mukeshkumarb-25387625b',
               ],
             }),
           }}
